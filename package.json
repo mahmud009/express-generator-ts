@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "nodemon --exec \"NODE_ENV=development ts-node ./src\" --watch ./src --ext .ts",
-    "start": "NODE_ENV=production node -r ./build/env/config.js ./build",
+    "start": "node -r ./build/env/config.js ./build/index.js",
     "build": "ts-node ./scripts/build.ts",
     "lint": "eslint --flag unstable_ts_config",
     "type-check": "tsc --noEmit",
